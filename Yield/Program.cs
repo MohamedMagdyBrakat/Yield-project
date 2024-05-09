@@ -1,4 +1,6 @@
-﻿namespace Yield
+﻿using System.Diagnostics;
+
+namespace Yield
 {
     internal class Program
     {
@@ -16,6 +18,8 @@
             Console.WriteLine("\n\nGenerateV3()");
             foreach (int number in GenerateV3())
                 Console.Write($"  {number}  ");
+
+            Console.ReadKey();
         }
         static IEnumerable<int> GenerateV1()
         {
